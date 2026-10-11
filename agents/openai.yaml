@@ -1,6 +1,6 @@
 interface:
   display_name: "收入可能性地图"
-  short_description: "从兴趣、能力与行业系统发散收入路径，拆解付款人与价值，生成图表并按需查证筛选"
-  default_prompt: "使用 $income-opportunity-map，从我给出的兴趣、能力或行业出发，先发散不同收入路径，明确谁付钱、买什么、我做什么、怎么收费，并输出地图和表格；除非我提出，不要提前筛选。"
+  short_description: "从兴趣与能力发散收入路径，拆解付款人与价值，默认生成地图图片、文字分析与机会表"
+  default_prompt: "使用 $income-opportunity-map，从我给出的兴趣、能力或行业发散收入路径，明确谁付钱、买什么、我做什么、怎么收费，默认交付文字、表格和实际生成的地图图片；仅在当前 Agent 没有生图能力时说明原因并提供文字地图，不提前筛选。"
 policy:
   allow_implicit_invocation: true

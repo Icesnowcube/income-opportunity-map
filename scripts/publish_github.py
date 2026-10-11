@@ -104,7 +104,7 @@ def main() -> int:
         base = ['git', '-c', 'core.hooksPath=/dev/null', '-c', 'commit.gpgsign=false',
                 '-c', f'user.name={login}', '-c', f'user.email={uid}+{login}@users.noreply.github.com']
         checked([*base, 'add', '--', *files], cwd=staging, env=env)
-        checked([*base, 'commit', '-m', 'Initial open-source release: income opportunity map v1.0.1'],
+        checked([*base, 'commit', '-m', 'Initial open-source release of income opportunity map'],
                 cwd=staging, env=env)
         expected = checked(['git', 'rev-parse', 'HEAD'], cwd=staging, env=env)
         try:
